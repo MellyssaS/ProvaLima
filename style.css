@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #000000;
+}
+
+.header {
+    background: url('imagens/amigos.gif') no-repeat center/cover;
+    color: rgb(255, 255, 255);
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.flor {
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 136px;
+}
+
+.banner {
+    background-color: #ffd000af;
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(-20);
+    transition: opacity 0.5s ease, tranform 0.5s ease;
+    animation: fadeInDown 0.5s forwards;
+}
+
+.banner a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #ff0000b9;
+}
+
+.banner a:hover{
+    color: #ffee00;
+}
+
+
+@keyframes fadeInDown {
+    from{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+}
+
+.content {
+    padding: 20px;
+    color: #ffffff;
+}
+
+h2{
+    color: rgb(255, 255, 255);
+    margin-top: 40px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-item {
+    background-color: rgb(0, 0, 0);
+    border: 1px solid #ffee00;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.product-item:hover {
+    border: 3px solid rgb(255, 0, 0);
+    width: 230px;
+    padding: 20px;
+}
+
+.product-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.product-item img:hover{
+    width: 110%;
+    border-radius: 7px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff   ;
+    color: rgb(0, 0, 0);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.form-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+
+h3 {
+    text-align: left;
+    color: #ffffff;
+}
+
+label {
+    margin-top: 5px;
+    display: block;
+    color: #555;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+button {
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #686767;
+}
+
+
+
+
+
+
+
